@@ -1,22 +1,20 @@
-
-@Login
 Feature: login button validation
  
-@Login
+@e2et
   Scenario Outline: login with correct username and password
-    Given user navigates to browser
+    Given user launche the browser
     When user enters "<username>" and "<password>"
     And user clicks on signin button
     Then "<user>" can able to login sucessfully
+    And user logout from the site
 
     Examples: 
-      |username | password      |user               |
-      |cs       | Password@123  |Cold Storage       |
-      |pc1      | Password@123  |Processing center  |
-      |dist1    | Password@123  |distribution center|
+      |username | password      |user |
+      |cs       | Password@123  |cs   |
+      |pc1      | Password@123  |pc   |
+      |dist1    | Password@123  |dc   |
       
       
       
-      
-      
-      
+
+

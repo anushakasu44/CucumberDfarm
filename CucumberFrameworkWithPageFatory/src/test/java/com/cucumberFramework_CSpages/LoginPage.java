@@ -1,4 +1,4 @@
-package com.cucumberFrameworkPages;
+package com.cucumberFramework_CSpages;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,23 +26,49 @@ public class LoginPage {
 	@FindBy(xpath="//button[text()='Login']")
 	WebElement login;
 	
+	@FindBy(xpath="//a[text()='Create a new Account']")
+	WebElement CreateNewAccount;
+	
+//	@FindBy(xpath="//mat-error[@id='mat-error-0']")
+//	WebElement emailreq;
+//	
+//	@FindBy(xpath="//mat-error[@id='mat-error-1']")
+//	WebElement pswdreq;
+	
+	
+	
 	public LoginPage(WebDriver driver2) {
 		this.driver=driver2;
 		PageFactory.initElements(driver2, this);
-		
 	}
 	
 	public void enterusername(String value) {
 		username.sendKeys(value);
 	}
+	
 	public void enterPassword(String value) {
 		password.sendKeys(value);
 	}
-		public void clickonsubmit() {
+	
+	public void clickonsubmit() {
 			login.click();
 	}
-		public void takeScreenshot(String filename) throws Exception {
-			File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			FileHandler.copy(file, new File("C:\\Users\\anush\\eclipse-workspace\\CucumberFrameworkWithPageFatory\\target"+filename+".jpg"));
-		}
+	
+	public void CreatenewAccount() {
+		CreateNewAccount.click();
+	}
+	
+	
+	
+//	public void validateemailreq() {
+//	username.click();
+//	boolean bool=emailreq.isDisplayed();
+//	System.out.println(bool);
+//}
+//public void validatepswdreq() {
+//password.click();
+//boolean bool=emailreq.isDisplayed();
+//System.out.println(bool);
+//}
+
 }

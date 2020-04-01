@@ -30,36 +30,46 @@
     <scope>test</scope>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-<dependency>
-    <groupId>io.rest-assured</groupId>
-    <artifactId>rest-assured</artifactId>
-    <version>4.0.0</version>
-    <scope>test</scope>
-</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.json/json -->
+
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
 <dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20190722</version>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.5</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
 <dependency>
     <groupId>info.cukes</groupId>
     <artifactId>cucumber-junit</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.5</version>
     <scope>test</scope>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
+
+
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer -->
 <dependency>
     <groupId>info.cukes</groupId>
-    <artifactId>cucumber-java</artifactId>
-    <version>1.2.0</version>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>1.2.4</version>
+    <scope>test</scope>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/ru.sbtqa.tag/cucumber-runner -->
+<dependency>
+    <groupId>ru.sbtqa.tag</groupId>
+    <artifactId>cucumber-runner</artifactId>
+    <version>1.0.8</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>1.2.5</version>
+</dependency>
 
   </dependencies>
 </project>
